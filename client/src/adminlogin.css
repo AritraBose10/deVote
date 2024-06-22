@@ -1,0 +1,118 @@
+.login-container {
+  font-family: "Arial", sans-serif;
+  background-image: url("https://images.alphacoders.com/123/thumb-1920-1239284.jpg");
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding-left: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  color: #f0f0f0;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#heading {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s, background-color 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.input:focus {
+  border-color: #1e90ff;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#submit {
+  background: #1e90ff;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#submit:hover {
+  background: #0c7bdc;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+  color: #ff4d4d;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

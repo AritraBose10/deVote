@@ -1,0 +1,137 @@
+.vote {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(30, 30, 30);
+}
+
+#voting-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+
+  height: 80vh;
+  width: 41vw;
+  position: fixed;
+  left: 30%;
+  top: 5%;
+}
+#voting-machine {
+  border: 2px solid black;
+  border-radius: 16px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 75vh;
+  width: 40vw;
+}
+#party {
+  border-radius: 16px;
+  padding: 10px;
+  border-color: black;
+  height: 7vh;
+  width: 38vw;
+  background-color: yellow;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; /* Aligns items with space between */
+  align-items: center; /* Centers items vertically */
+  margin: 10px;
+  border: 1px solid black;
+}
+
+h2 {
+  margin: 0;
+  color: black;
+}
+
+img {
+  width: 2vw;
+  height: 4vh;
+  background-color: initial;
+}
+#circle {
+  border-radius: 50%;
+  width: 1vw;
+  height: 2vh;
+
+  margin: 5px;
+}
+#btn {
+  background-color: rgb(0, 0, 33);
+  border-radius: 16px;
+  height: 40px;
+  width: 100px;
+  color: white;
+  cursor: pointer;
+}
+.active {
+  background-color: rgb(198, 0, 0);
+}
+.inactive {
+  background-color: rgb(77, 0, 0);
+}
+#btn.enabled {
+  background-color: rgb(0, 0, 33);
+  color: white;
+}
+#btn.disabled {
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+.confirmation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px); /* Semi-transparent background */
+}
+
+.confirmation-message {
+  background-color: #fff;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.confirmation-message p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333; /* Dark text color */
+}
+
+.confirmation-buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#cnf:hover {
+  background-color: green;
+  color: white;
+}
+#cnc:hover {
+  background-color: rgb(144, 0, 0);
+  color: white;
+}
+
+.close {
+  backdrop-filter: 2px;
+  border-radius: 12%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%, -50%);
+  cursor: pointer;
+}

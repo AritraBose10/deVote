@@ -1,0 +1,59 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: white;
+  overflow: hidden;
+
+  background-image: url("https://www.tech.gov.sg/images/technews/blockchain-uses.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo img {
+  height: 70px;
+  width: 190px;
+  color: white;
+  margin-left: 10px;
+}
+
+h1 {
+  font-size: 2.5em; /* Adjust the font size */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+p {
+  font-size: 1.2em; /* Adjust the font size */
+  margin-bottom: 30px; /* Add space below the paragraph */
+}
+
+.cta-button {
+  background-color: #8a2be2; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  padding: 15px 30px; /* Button padding */
+  font-size: 1em; /* Button font size */
+  border-radius: 5px; /* Button corner radius */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+  margin-left: 40px;
+  margin-right: 40px; /* Smooth background color transition */
+}
+
+.cta-button:hover {
+  background-color: #6a1bbe;
+}
+.author {
+  position: absolute;
+  top: 90%;
+  left: 47%;
+  font-size: small;
+  letter-spacing: 2px;
+}

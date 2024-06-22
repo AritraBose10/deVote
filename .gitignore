@@ -1,0 +1,52 @@
+# Laravel specific
+/.env
+/vendor/
+/public/storage
+Homestead.json
+Homestead.yaml
+
+# Laravel specific environment files
+/.env.*
+!.env.example
+!.env.development
+!.env.production
+!.env.local
+
+# Node.js / React specific
+node_modules/
+/build/
+.pnp/
+.pnp.js
+
+# IDE / Editor specific
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.phpunit.cache
+/storage/*.key
+.env.backup
+.phpactor.json
+.phpunit.result.cache
+auth.json
+/.fleet
+
+# Logs
+npm-debug.log*
+yarn-error.log
+
+# Laravel Mix or other build tools
+/public/build
+/public/hot
+
+# Ignore vendor and node_modules in root (for safety)
+/vendor
+/node_modules
